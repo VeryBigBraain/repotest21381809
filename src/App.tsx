@@ -3,15 +3,15 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 
 import { HomePage } from './pages/HomePage';
-import { Page1Page } from './pages/Page1Page';
+import { NewsPage } from './pages/NewsPage';
 
 export default function App() {
   const router = createBrowserRouter([{
       path: "/",
       element: <HomePage />
   },{
-      path: "/page1",
-      element: <Page1Page />
+      path: "/news",
+      element: <NewsPage />
   },]);
   
   return (
